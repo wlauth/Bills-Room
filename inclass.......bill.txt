@@ -1,0 +1,32 @@
+Created on Wen Oct 24 12:35:30 2018
+
+Use a dictionary to count the number of words in a text file.
+
+@author: wlauth
+"""
+# Stepps involved
+# 0. Open the text file (for reading ~ the default)
+# 0b Initialize dictionary
+# 1. Read of process Line by Line
+#for lineoftext in fhtext:
+# fhtext ~ 'file handle to text file'
+fname= 'passage.txt'
+
+# Initialization dictionary
+
+fhtext= open(fname)     # open('passage.txt')
+
+
+
+words = {}   #words = dict()
+for lineoftext in fhtext:
+    # cleanup
+    lineoftext = lineoftext.strip().replace('.','').replace(',','').replace(')','')
+    lineoftext = lineoftext.replace('(',',').replace(')','').lower()
+    # .split()into a list
+    listwords = lineoftext.split()
+    for aword in listwords:
+    #   print(lineoftext)
+#       print(listwords)
+        print(aword)
+pyye.com

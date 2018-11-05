@@ -1,0 +1,94 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+three = (0, 1, 2)
+
+print(three[2])
+# 2
+
+
+
+try:
+    print(three[3])
+    print("success")
+except IndexError:
+    print("ERROR: IndextError")
+    print("skipping statement...")
+except ValueError:
+    print("ERROR: ValueError")
+except:
+    print("ERROR: Unspecified")
+    
+print(three[0])
+# 0
+# Traceback (most recent call last):
+
+#    File "<ipython-input-3-a2dcc037fc
+#        print(three[3])
+#
+# IndexError: tuple index out of range
+#
+#
+#// Set1
+#successFailureRatio = numSucesses/numFailures
+#print('The success/failure ratio is', successFailureRatio)
+#print('Now here.')
+
+
+names = ('Amy', 'Ben', 'Cara')
+#
+#         
+#               Function/Program
+#                +-----------+
+#  INPUT  ----> | PROCESSING |  ------> OUTPUT
+#               +-----------+          function:return 
+#
+#
+#REMEMBER:Output of input() is str <string>
+#
+#
+num = int( input('Please enter a number from 1 to 3: ' ))
+
+# Receive imput
+# Check the input
+
+try:
+    print()
+except:
+    print()
+
+for inter in range(num):
+    print('Hello, ', names[inter], '.', sep='')
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
